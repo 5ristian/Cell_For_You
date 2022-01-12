@@ -453,33 +453,37 @@ button:hover {
     background-color: rgb(172, 167, 167);
 }
 /*------ media -------*/
-.media {
-    display: block;
+#introducing {
+    padding-top: 30px;
+    text-align: center;
+    text-decoration-style: dotted;
 }
-.media-1 {
-    display: flex;
-    align-items: center;
-    justify-content: right;
-    padding-top: 20px;
-    padding-bottom: 20px;
-   
+.play {
+    text-align: center;
 }
-
-.media-2 {
-    display: block;
-}
-.videos {
-    width: 50vw;
-    height: 50vh;
+.the-video {
+    text-align: center;
+    width: 90vw;
+    height: 70vh;
     border-width: 3px;
     border-style: solid;
-    border-radius: 8px;
+    border-radius: 2px;
     border-color: rgb(160, 175, 175);
-    
 }
-[controls] {
-    background: rgb(14, 53, 41);
-    
+.details {
+    display: block;
+}
+.container-media {
+    display:inline ;
+}
+#title {
+    padding-left: 25px;
+}
+.properties {
+    padding-left: 25px;
+}
+.list {
+    display: right;
 }
 
 /*------ index -----*/
