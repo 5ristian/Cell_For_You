@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CellForYou</title>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-    <script src="js/store.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js" defer></script>
+    <script src="js/store.js" defer ></script>
     <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
@@ -35,14 +35,14 @@
       </div>
     </header>
     <div id="products">
-      <p> Price ({{value}})</p>
+      <p>Price ({{value}})</p>
       <input type="range" name="range" id="range" min="0" max="9000" v-model="value">
       <ul>
-        <li v-for="product in productsArray">
+        <li v-for="product in filter">
             <img :src="product.image">
             <h1>{{product.name}}</h1>
             <p>{{product.description}}</p>
-            <p>{{price}} RON</p>
+            <p>{{product.price}}</p>
         </li>
       </ul>
     </div>

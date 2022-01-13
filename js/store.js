@@ -21,13 +21,20 @@
           "price": "7599",
           "description": "Iphone 11 Yellow, 256 GB",
           "image":"images/Apple/Iphone11/iph11-y.png",
+      },
+      {
+          "id":"3",
+          "name": "Iphone 11",
+          "price": "7599",
+          "description": "Iphone 11 Yellow, 256 GB",
+          "image":"images/Apple/Iphone11 pro/iph11-pro-mid-green.png",
       }
       ],
       value: 0
   },
   computed: {
       filter(){
-          this.products.filter(item => item.price < this.value)
+          return this.productsArray.filter(item => Number(item.price) < this.value)
       }
   }
 })
