@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CellForYou</title>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js" ></script>
     <script src="js/store.js" defer></script>
     <link
       rel="stylesheet"
@@ -43,25 +43,9 @@
         <p>Total amount: {{totalBagAmount}} $</p>
         <i class="fas fa-shopping-cart"></i>
       </div>
-      <input
-        type="search"
-        v-model="productsSearch"
-        name="search"
-        id="search"
-        placeholder="Search..."
-      />
-      <input
-        type="range"
-        name="range"
-        id="range"
-        min="0"
-        max="2500"
-        v-model="value"
-      />
-      <products-list
-        :products="filterProductsByName"
-        v-on:addToBagEvent="addToBag"
-      ></products-list>
+      <input type="search" v-model="productsSearch" name="search" id="search" placeholder="Search..."/>
+      <input type="range" name="range" id="range" min="0" max="2500" v-model="value" />
+      <products-list :products="filterProductsByName" v-on:add-to-bag-event="addToBag" ></products-list>
     </div>
 
     <footer>
