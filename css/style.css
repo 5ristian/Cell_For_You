@@ -390,6 +390,93 @@ hr {
     margin-right: 25em;
     float: right;
 }
+.store-container {
+    width: 95vw;
+    border: solid 2px;
+    font-family: serif;
+    margin: 2em 2em;
+}
+.store-container h1{
+    margin-top: 0.5em;
+    text-align: center;
+}
+
+.store-container .product {
+    background: rgba(255, 255, 255, 0.705);
+    text-align: center;
+    padding: 80px 20px 30px 20px;
+    display: inline-block;
+    margin: 50px;
+}
+
+.store-container .product h3 {
+    display: inline;
+    font-family: serif;
+    font-size: 27px;
+    font-weight: bold;
+    color: #f00f0f;
+    padding: 17px;
+}
+
+.store-container .product h2 {
+    padding-top: 10px;
+    color: rgb(63, 63, 63);
+    font-family: serif;
+    text-align: center;
+    text-decoration-line: line-through;
+    opacity: 0.8;
+}
+
+.store-container .product span {
+    
+    display: block;
+    color: #19449b;
+    font-size: 18px;
+    line-height: 16px;
+    padding-bottom: 10px;
+}
+
+.store-container .product i {
+    padding: 0px 2px;
+}
+.product {
+    background: rgb(255, 255, 255, 0.705);
+    box-shadow: 0px 0px 19px 2px rgba(221, 221, 221, 0.521);
+    display: block;
+    width: 25%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ccc;
+    border-radius: 4px;
+}
+
+.store-container .product>img {
+    height: 200px;
+    width: auto;
+}
+.add_to_bag {
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.add_to_bag button {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1em;
+    font-family: 'Josefin Slab', serif;
+    height: 2em;
+    width: 13em;
+    background-color: #8ad3d3;
+    border-radius: 4px;
+    border-width: solid;
+    border-color: rgb(177, 177, 177);
+    box-shadow: 1px 0px 5px 0px;
+}
+
+.add_to_bag button:hover {
+    background-color: rgb(172, 167, 167);
+}
 
    
 /*------ media -------*/
