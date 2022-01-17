@@ -266,10 +266,12 @@ hr {
 }
 
 .content p {
+    text-align: center;
+    letter-spacing: 1px;
     width: 55vw;
     padding-top: 40px;
     padding-left: 30px;
-    font-size: 1.5em;
+    font-size: 2em;
     line-height: 30px;
 }
 
@@ -336,6 +338,15 @@ hr {
 }
 
 /*--------- store ----------*/
+#products{
+    margin-bottom: 2em;
+}
+.fonts {
+    color: rgb(4, 36, 32);
+    font-size: 1.3em;
+    text-align: center;
+}
+
 #banner  {
     width: 100vw;
     height: 33vh;
@@ -353,7 +364,7 @@ hr {
     float: left;
 }
 #banner-cart {
-    margin-top: -1em;
+    margin-top: -1.5em;
     float: right;
     width: 15em;
     height: 15em;
@@ -376,19 +387,124 @@ hr {
 }
 #bag {
     float: right;
-    margin-top: -1.2em;
+    margin-top: -2em;
     margin-right: 1em;
     font-size:35px;
+    color: rgb(4, 36, 32);
 }
+
 #search {
-    border: rgb(10, 53, 49);
+    color: rgb(4, 36, 32);
+    border-style: solid;
     border-radius: 6px;
     width: 35em;
     height: 3em;
     position: relative;
     margin-top: -4em;
-    margin-right: 25em;
+    margin-right: 15em;
     float: right;
+}
+#price {
+    font-size: 1.5em;
+    color: rgb(4, 36, 32);
+    margin-top: 1em;
+}
+#showProducts{
+    font-size: 1.5em;
+    color: rgb(4, 36, 32);
+}
+
+   
+/*------ media -------*/
+#introducing {
+    font-family: 'Josefin Slab', serif;
+    font-size: 3em;
+    color: rgb(4, 36, 32);;
+    padding-top: 30px;
+    text-align: center;
+    text-decoration-style: dotted;
+}
+.play {
+    text-align: center;
+}
+.the-video {
+    text-align: center;
+    width: 90vw;
+    height: 70vh;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 2px;
+    border-color: rgb(160, 175, 175);
+}
+.details {
+    display: block;
+    font-family: 'Josefin Slab', serif;
+    
+}
+.container-media {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 3em;
+    text-align: center;
+}
+#title {
+    font-size: 2.7em;
+    margin-top: 1em;
+    text-align: center;
+}
+.properties {
+    color: rgb(18, 53, 44);
+    padding-bottom: 30px;
+
+}
+.list {
+    margin-left: 4em;
+    text-align: left;
+}
+
+
+/*------ index -----*/
+
+.container {
+    margin: 40px 120px;
+    overflow: auto;
+}
+.slider-inner {
+    position: relative;
+    overflow: hidden;
+    float: left;
+}
+.slider-inner img{
+    width: 80vw;
+    display: none;
+}
+.slider-inner img.active {
+    display: inline-block;
+}
+.nav-btn{
+    background: rgba(255, 255, 255, 0.55);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+   
+}
+.prev, .next {
+  float: left;
+  margin-top: 150px;
+  cursor: pointer;
+}
+
+.prev{
+    position: relative;
+    margin-right: -100px;
+    z-index: 100;
+}
+.next{
+    position: relative;
+    margin-left: -55px;
+    z-index: 100;
 }
 .store-container {
     width: 95vw;
@@ -397,8 +513,10 @@ hr {
     margin: 2em 2em;
 }
 .store-container h1{
+    font-size: 3em;
     margin-top: 0.5em;
     text-align: center;
+    color: rgb(4, 36, 32) ;
 }
 
 .store-container .product {
@@ -476,82 +594,4 @@ hr {
 
 .add_to_bag button:hover {
     background-color: rgb(172, 167, 167);
-}
-
-   
-/*------ media -------*/
-#introducing {
-    padding-top: 30px;
-    text-align: center;
-    text-decoration-style: dotted;
-}
-.play {
-    text-align: center;
-}
-.the-video {
-    text-align: center;
-    width: 90vw;
-    height: 70vh;
-    border-width: 3px;
-    border-style: solid;
-    border-radius: 2px;
-    border-color: rgb(160, 175, 175);
-}
-.details {
-    display: block;
-}
-.container-media {
-    display:inline ;
-}
-#title {
-    padding-left: 25px;
-}
-.properties {
-    padding-left: 25px;
-}
-.list {
-    display: right;
-}
-
-/*------ index -----*/
-
-.container {
-    margin: 40px 120px;
-    overflow: auto;
-}
-.slider-inner {
-    position: relative;
-    overflow: hidden;
-    float: left;
-}
-.slider-inner img{
-    width: 80vw;
-    display: none;
-}
-.slider-inner img.active {
-    display: inline-block;
-}
-.nav-btn{
-    background: rgba(255, 255, 255, 0.55);
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    padding: 5px;
-   
-}
-.prev, .next {
-  float: left;
-  margin-top: 150px;
-  cursor: pointer;
-}
-
-.prev{
-    position: relative;
-    margin-right: -100px;
-    z-index: 100;
-}
-.next{
-    position: relative;
-    margin-left: -55px;
-    z-index: 100;
 }
